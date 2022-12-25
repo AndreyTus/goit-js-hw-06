@@ -14,14 +14,14 @@ const images = [
 ];
 
 const ulEl = document.querySelector('.gallery')
-// console.log(ulEl)
+console.log(ulEl)
 
 const listPictures = images.map(image => `<li><img class='pictures' src=${image.url} width = '480' alt=${image.alt}></img></li>`).join('')
 
 ulEl.insertAdjacentHTML('beforeend', listPictures)
 
 const picture = document.querySelectorAll('.pictures')
-// console.log(picture)
+console.log(picture)
 
 ulEl.style.display = 'flex-wrap'
 ulEl.style.listStyle = 'none'
