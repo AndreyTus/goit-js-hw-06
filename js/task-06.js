@@ -5,7 +5,7 @@ const lengthEl = inputEl.getAttribute('data-length')
 console.log(lengthEl)
 
 inputEl.addEventListener('blur', event => {
-    if (event.target.value.length == lengthEl) {
+    if (event.target.value.length === Number(lengthEl)) {
         inputEl.classList.add('valid')
         if (inputEl.classList.contains('invalid')) {
             inputEl.classList.remove('invalid')
